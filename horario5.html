@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Horario — 5to de Secundaria</title>
+  <link rel="icon" href="assets/imagen1.jpg">
+  <style>
+    :root{
+      --celeste:#5fc2e6;
+      --celeste-osc:#2ea6d0;
+      --blanco:#E6E6FA;
+      --gris:#f4f7fb;
+      --texto:#000000;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    /* 🔹 Fondo con degradado animado */
+    body{
+      margin:0;
+      background:linear-gradient(135deg,#e6f0ff,#f2e6ff,#e6faff);
+      background-size:400% 400%;
+      animation:fondoMover 10s ease infinite;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      color:var(--texto);
+      padding:20px;
+    }
+    @keyframes fondoMover{
+      0%{background-position:0% 50%;}
+      50%{background-position:100% 50%;}
+      100%{background-position:0% 50%;}
+    }
+
+    /* 🔹 Contenedor principal */
+    .container{
+      text-align:center;
+      background:rgba(255,255,255,0.85);
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 8px 28px rgba(0,0,0,0.15);
+      max-width:900px;
+      width:100%;
+    }
+
+    /* 🔹 Título animado */
+    h1{
+      font-size:2.8em;
+      margin-bottom:20px;
+      font-family:'Lobster', cursive;
+      background:linear-gradient(90deg,#2ea6d0,#5fc2e6,#2ea6d0);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      animation:brillo 3s ease-in-out infinite;
+    }
+    @keyframes brillo {
+      0% { filter: brightness(1); }
+      50% { filter: brightness(1.6); }
+      100% { filter: brightness(1); }
+    }
+
+    /* 🔹 Imagen del horario */
+    img{
+      width:100%;
+      max-width:800px;
+      border-radius:16px;
+      margin-top:15px;
+      border:6px solid transparent;
+      background:linear-gradient(135deg,#2ea6d0,#5fc2e6,#2ea6d0);
+      padding:4px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+      transition:transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    img:hover{
+      transform:scale(1.03);
+      box-shadow:0 12px 30px rgba(0,0,0,0.3);
+    }
+
+    /* 🔹 Botón volver */
+    a{
+      display:inline-block;
+      margin-top:25px;
+      background:linear-gradient(135deg,#5fc2e6,#2ea6d0);
+      color:#fff;
+      padding:12px 20px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 6px 14px rgba(0,0,0,0.15);
+      transition:transform 0.3s ease, background 0.3s ease;
+    }
+    a:hover{
+      transform:scale(1.05);
+      background:linear-gradient(135deg,#2ea6d0,#5fc2e6);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Horario de 5to de Secundaria</h1>
+    <img src="assets/imagen81.jpg" alt="Horario del curso 5to de Secundaria">
+    <a href="quinto de secundaria.html">⬅ Volver al curso</a>
+  </div>
+</body>
+</html>
